@@ -18,18 +18,26 @@ a:hover {
     text-decoration: none;
 }
 
-/* Hero Section */
+/* Ensure the hero takes full viewport height */
 .hero {
-    height: 70vh;
-    min-height: 400px;
-    background-color: #1a1a1a;
+  height: 100vh;
+  overflow: hidden;
 }
 
-.hero .lead {
-    color: #a0a0a0;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
+/* Adjust the carousel images to cover the container */
+.hero img {
+  object-fit: cover;
+  height: 100vh;
+}
+
+/* Make sure the overlay covers the entire hero section */
+.hero-overlay {
+  z-index: 1;
+}
+
+/* Ensure hero content appears on top of the overlay */
+.hero-content {
+  z-index: 2;
 }
 
 /* Buttons */
