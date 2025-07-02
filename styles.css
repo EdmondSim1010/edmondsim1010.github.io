@@ -153,3 +153,29 @@ footer a {
 footer a:hover {
     color: #fff;
 }
+
+/* --- PROJECTS PAGE SPECIFIC --- */
+
+/* Style for the images at the top of the cards */
+.card-img-top {
+    height: 220px;
+    object-fit: cover; /* Ensures images cover the area without stretching */
+    background-color: #2a2a2a; /* Nice background for while images load */
+}
+
+/* Container for the technology badges */
+.tech-tags .badge {
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+}
+
+/* Ensure body can grow to push footer down */
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    flex: 1;
+}
