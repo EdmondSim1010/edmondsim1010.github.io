@@ -20,23 +20,21 @@ The website is structured as a single-page application to allow for smooth, narr
 ### 1. Dynamic Hero Section
 The first thing a visitor sees is a full-screen hero section designed to be visually engaging.
 
-*   **Image Carousel:** A carousel powered by Bootstrap 5 cycles through a series of personal photos. This adds a dynamic and personal touch, offering a glimpse into my life beyond the screen.
-*   **Text Overlay:** A semi-transparent overlay ensures that the introductory text is perfectly readable against the background images.
-*   **Clear Introduction:** The centered text immediately communicates who I am and what I do, followed by a prominent call-to-action button ("View My Work") that directs users to the projects section.
+*   **Image Carousel:** A carousel powered by Bootstrap 5 cycles through a series of personal photos.
+*   **Text Overlay:** A semi-transparent overlay ensures that the introductory text is readable against the background images.
 
 ### 2. Selected Projects Showcase
 This section is the heart of the portfolio.
 
-*   **Card-Based Layout:** Projects are presented in a clean, card-based layout using Bootstrap's grid system. This design is scannable and modular.
-*   **Concise Descriptions:** Each card provides a succinct summary of the project, including its purpose and the technologies used.
-*   **Action-Oriented Links:** Each project includes clear, icon-driven buttons that link to a live demo and the relevant GitHub repository, encouraging visitors to explore my work in more detail.
+*   **Card-Based Layout:** Projects are presented in a card-based layout using Bootstrap's grid system. 
+*   **Concise Descriptions:** Each card provides a summary of the project, including its purpose and the languages used.
+*   **Action-Oriented Links:** Each project includes clear buttons that link to a live demo and the relevant GitHub repository that encourage visitors to explore my work in more detail.
 
 ### 3. "About Me" and Skills Section
-This section bridges the gap between my technical work and my personal identity.
+This section links my technical work and my personal identity.
 
 *   **Personal Narrative:** A brief, conversational biography provides context for my academic pursuits and career aspirations. It also shares some of my personal interests, like music, to present a more well-rounded profile.
-*   **Key Skills Badges:** My technical skills are displayed as Bootstrap badges. This visual treatment makes them easy to scan and digest, providing a quick overview of my capabilities in programming languages, libraries, and tools.
-
+*   **Key Skills Badges:** My technical skills are displayed as Bootstrap badges. This visual treatment makes them easy to scan and digest, providing a quick overview of my capabilities.
 ### 4. Responsive Navigation and Footer
 The user experience is supported by consistent and intuitive navigation elements.
 
@@ -45,7 +43,7 @@ The user experience is supported by consistent and intuitive navigation elements
 
 ## Technology Stack
 
-This website was built using a curated set of modern and widely-adopted front-end technologies.
+This website was built using a set of modern and widely-adopted front-end technologies.
 
 *   **HTML5:** Used for the semantic structure and content of the website.
 *   **CSS3:** A custom stylesheet (`styles.css`) is used for specific design choices, such as the hero overlay, card styling, and color scheme, that go beyond the default Bootstrap framework.
