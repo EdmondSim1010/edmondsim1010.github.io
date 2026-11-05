@@ -1,0 +1,152 @@
+/* Edmond Sim — personal site. No frameworks, no JS. */
+
+:root {
+  --bg: #fbfaf7;
+  --fg: #1f1f1d;
+  --muted: #6b6a66;
+  --rule: #e2dfd8;
+  --link: #1d4ed8;
+  --link-visited: #6d28d9;
+  --mark: #fff3bf;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #15151a;
+    --fg: #e6e4df;
+    --muted: #9c9a94;
+    --rule: #2d2d35;
+    --link: #8ab4ff;
+    --link-visited: #c4a6ff;
+    --mark: #3a3418;
+  }
+}
+
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+
+html { font-size: 17px; }
+
+body {
+  margin: 0;
+  padding: 3.5rem 1rem 4rem;
+  background: var(--bg);
+  color: var(--fg);
+  font-family: Georgia, "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Palatino, serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+main {
+  max-width: 38rem;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 1.6rem;
+  font-weight: normal;
+  margin: 0 0 0.25rem;
+  letter-spacing: -0.01em;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted);
+  margin: 3rem 0 0.75rem;
+  padding-top: 1rem;
+  clear: both;
+  border-top: 1px solid var(--rule);
+}
+
+p { margin: 0 0 1rem; }
+
+a {
+  color: var(--link);
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 2px;
+}
+a:visited { color: var(--link-visited); }
+a:hover { text-decoration-thickness: 2px; }
+
+.subtitle {
+  color: var(--muted);
+  margin-bottom: 2rem;
+}
+
+/* top nav: just a row of links */
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem 1.25rem;
+  margin-bottom: 2.5rem;
+  font-size: 0.95rem;
+}
+nav a { color: var(--fg); text-decoration: none; }
+nav a:hover { text-decoration: underline; }
+
+/* portrait sits to the right of the intro on wide screens */
+.portrait {
+  float: right;
+  width: 10rem;
+  margin: 0.3rem 0 1rem 1.5rem;
+  border-radius: 4px;
+}
+@media (max-width: 540px) {
+  .portrait { float: none; display: block; width: 100%; max-width: 20rem; margin: 0 0 1.5rem; }
+}
+
+ul { padding-left: 1.2rem; }
+li { margin-bottom: 0.4rem; }
+
+/* projects: a plain definition-ish list */
+.projects { list-style: none; padding: 0; }
+.projects li { margin-bottom: 1.4rem; }
+.projects b { font-weight: 600; }
+.projects .meta { color: var(--muted); font-size: 0.9rem; }
+
+/* photos: a small grid, nothing fancy */
+.photos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0.5rem;
+  margin: 0 0 1rem;
+}
+.photos img {
+  width: 100%;
+  object-position: center top;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  display: block;
+}
+.photos figcaption, .caption {
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+@media (max-width: 540px) {
+  .photos { grid-template-columns: 1fr 1fr; }
+}
+
+.shot {
+  display: block;
+  width: 100%;
+  max-width: 18rem;
+  border-radius: 3px;
+  border: 1px solid var(--rule);
+  margin: 0.5rem 0 1rem;
+}
+
+footer {
+  max-width: 38rem;
+  margin: 4rem auto 0;
+  padding-top: 1rem;
+  border-top: 1px solid var(--rule);
+  color: var(--muted);
+  font-size: 0.85rem;
+}
+
+small, .small { font-size: 0.9rem; color: var(--muted); }
